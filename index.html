@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Padma Bridge Museum</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #f0f4f7, #dbe9f4);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    nav {
+      background: #0B3D91;
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 1.1rem;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #FFD700;
+      text-shadow: 0 0 5px #fff;
+    }
+
+    header {
+      background: linear-gradient(to right, #0b3d91, #1976d2);
+      color: white;
+      padding: 40px 20px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+    }
+
+    header h1 i {
+      color: #FFD700;
+      margin-right: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      font-style: italic;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s;
+    }
+    .banner {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+    section:hover {
+      transform: scale(1.01);
+    }
+
+    h2 {
+      color: #114B8C;
+      margin-bottom: 10px;
+      font-size: 1.8rem;
+    }
+
+    h2 i {
+      margin-right: 8px;
+      color: #20B486;
+      animation: glow 1.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 5px #20B486;
+      }
+      to {
+        text-shadow: 0 0 15px #20B486, 0 0 25px #20B486;
+      }
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      margin: 10px 0;
+      font-size: 1.1rem;
+    }
+
+    ul li i {
+      color: #20B486;
+      margin-right: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0B3D91;
+      color: white;
+      font-size: 0.9rem;
+    }
+
+    footer i {
+      margin-right: 6px;
+      color: #FFD700;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Menu -->
+  <nav>
+    <a href="index.html" class="active"><i class="fas fa-home"></i> Home</a>
+    <a href="about.html"><i class="fas fa-info-circle"></i> About the Museum</a>
+    <a href="collections.html"><i class="fas fa-archive"></i> Collections</a>
+    <a href="gallery.html"><i class="fas fa-images"></i> Gallery</a>
+    <a href="contact.html"><i class="fas fa-images"></i> Contact Us</a>
+  </nav>
+
+  <header id="home">
+    <h1><i class="fas fa-landmark"></i> Padma Bridge Museum</h1>
+    <p>Preserving Biodiversity and Cultural Heritage in Bangladesh</p>
+  </header>
+  <img src="banner.jpg" alt="Museum Banner" class="banner">
+
+  <div class="container">
+
+    <section id="about">
+      <h2><i class="fas fa-door-open"></i> Welcome</h2>
+      <p>
+        The <strong>Padma Bridge Museum</strong>, developed under the Padma Multipurpose Bridge Project, is a landmark institution committed to biodiversity preservation, research, and environmental education in Bangladesh. 🏞️ Located near the iconic Padma Bridge, the museum showcases the ecological transformation of the Padma River and its surrounding regions.
+      </p>
+    </section>
+
+    <section>
+      <h2><i class="fas fa-bullseye"></i> Our Mission</h2>
+      <ul>
+        <li><i class="fas fa-leaf"></i> 🌱 Document and preserve local biodiversity </li>
+        <li><i class="fas fa-lightbulb"></i> 📚 Promote environmental education and awareness </li>
+        <li><i class="fas fa-dna"></i> 🧬 Provide a hub for zoological research </li>
+        <li><i class="fas fa-tree"></i> 🌍 Create a sustainable eco-tourism destination </li>
+      </ul>
+    </section>
+
+    <section id="collections">
+      <h2><i class="fas fa-search"></i> What You'll Discover</h2>
+      <ul>
+        <li><i class="fas fa-fish"></i> 🐠 Over 2,150 animal specimens from 1,400+ species </li>
+        <li><i class="fas fa-ship"></i> ⛵ Traditional boats and fishing tools </li>
+        <li><i class="fas fa-bridge"></i> 🏗️ Models of the Padma Bridge and construction memorabilia </li>
+        <li><i class="fas fa-database"></i> 💾 Digitized archives and species databases </li>
+        <li><i class="fas fa-vr-cardboard"></i> 🎮 Interactive exhibits simulating natural habitats </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><i class="fas fa-chalkboard-teacher"></i> Education & Outreach</h2>
+      <p>
+        The museum hosts school visits, public seminars, and  community awareness programs to inspire the next generation to protect and care for our environment.
+      </p>
+    </section>
+
+    <section id="gallery">
+      <h2><i class="fas fa-map-marker-alt"></i> Plan Your Visit</h2>
+      <p>
+        Whether you're a 📚 student, 🔬 researcher, 🌏 tourist, or 🌿 nature enthusiast, the Padma Bridge Museum offers a fascinating journey through the ecological and infrastructural evolution of Bangladesh.
+      </p>
+    </section>
+
+  </div>
+
+  <footer>
+    <i class="fas fa-seedling"></i> &copy; 2025 Padma Bridge Museum | Designed with ❤️ for nature & heritage
+  </footer>
+
+</body>
+</html>

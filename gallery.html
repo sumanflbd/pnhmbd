@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery - Padma Bridge Museum</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome Icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    html {
+    scroll-behavior: smooth;
+  }
+
+  .category-filter {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  select {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    min-width: 250px;
+    background: #ffffff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+
+  select:focus {
+    outline: none;
+    border-color: #114B8C;
+  }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #f5f7fa;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header, nav, footer {
+      background-color: #114B8C;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;font-size: 1.1rem;
+      font-weight: bold;
+    }
+
+    h2 {
+      color: #114B8C;
+      padding-top: 40px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .gallery-grid figure {
+      background: white;
+      padding: 10px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    figcaption {
+      margin-top: 8px;
+      font-size: 0.95rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html" class="active"><i class="fas fa-home"></i> Home</a>
+    <a href="about.html"><i class="fas fa-info-circle"></i> About the Museum</a>
+    <a href="collections.html"><i class="fas fa-archive"></i> Collections</a>
+    <a href="gallery.html"><i class="fas fa-images"></i> Gallery</a>
+    <a href="contact.html"><i class="fas fa-images"></i> Contact Us</a>        
+</nav>
+<header>
+  <h1><i class="fas fa-images"></i> Padma Bridge Museum Gallery</h1>
+</header>
+
+<div class="category-filter">
+    <select id="categoryDropdown" onchange="scrollToCategory()">
+      <option value="">Jump to Category...</option>
+      <option value="mammals">Mammals</option>
+      <option value="birds">Birds</option>
+      <option value="reptiles">Reptiles</option>
+      <option value="amphibians">Amphibians</option>
+      <option value="fishes">Fishes</option>
+      <option value="mollusks">Mollusks</option>
+      <option value="arthropods">Arthropods</option>
+      <option value="other-invertebrates">Other Invertebrates</option>
+      <option value="boats">Boats</option>
+      <option value="fishing-gears">Fishing Gears</option>
+      <option value="nests">Nests</option>
+      <option value="eggs">Eggs</option>
+      <option value="replicas">Replicas</option>
+    </select>
+  </div>
+<div class="container">
+
+<!-- Template for each section -->
+<section id="mammals">
+  <h2><i class="fas fa-paw"></i> Mammals</h2>
+  <div class="gallery-grid">
+    <figure>
+      <img src="https://via.placeholder.com/300x180?text=Bengal+Tiger" alt="Bengal Tiger">
+      <figcaption><strong>Bengal Tiger</strong><br>Iconic predator of the Sundarbans.</figcaption>
+    </figure>
+    <figure>
+      <img src="https://via.placeholder.com/300x180?text=Otter" alt="Otter">
+      <figcaption><strong>Otter</strong><br>River-dwelling mammal known for fishing skills.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="birds">
+  <h2><i class="fas fa-dove"></i> Birds</h2>
+  <div class="gallery-grid">
+    <figure>
+      <img src="https://via.placeholder.com/300x180?text=Kingfisher" alt="Kingfisher">
+      <figcaption><strong>Kingfisher</strong><br>Colorful bird often seen near water bodies.</figcaption>
+    </figure>
+    <figure>
+      <img src="https://via.placeholder.com/300x180?text=Egret" alt="Egret">
+      <figcaption><strong>Egret</strong><br>Graceful white bird common in wetlands.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="reptiles">
+  <h2><i class="fas fa-dragon"></i> Reptiles</h2>
+  <div class="gallery-grid">
+    <figure>
+      <img src="https://via.placeholder.com/300x180?text=Monitor+Lizard" alt="Monitor Lizard">
+      <figcaption><strong>Monitor Lizard</strong><br>Large carnivorous reptile found along riverbanks.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="amphibians">
+  <h2><i class="fas fa-frog"></i> Amphibians</h2>
+  <div class="gallery-grid">
+    <figure>
+      <img src="https://via.placeholder.com/300x180?text=Tree+Frog" alt="Tree Frog">
+      <figcaption><strong>Tree Frog</strong><br>Small, colorful frog known for its vocal calls.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="fishes">
+  <h2><i class="fas fa-fish"></i> Fishes</h2>
+  <div class="gallery-grid">
+    <figure>
+      <img src="https://via.placeholder.com/300x180?text=Rohu" alt="Rohu Fish">
+      <figcaption><strong>Rohu</strong><br>Popular freshwater fish in Bangladeshi cuisine.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="mollusks">
+  <h2><i class="fas fa-water"></i> Mollusks</h2>
+  <div class="gallery-grid">
+    <figure>
+      <img src="https://via.placeholder.com/300x180?text=Freshwater+Snail" alt="Freshwater Snail">
+      <figcaption><strong>Freshwater Snail</strong><br>Common mollusk in wetland ecosystems.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="arthropods">
+  <h2><i class="fas fa-bug"></i> Arthropods</h2>
+  <div class="gallery-grid">
+    <figure>
+      <img src="https://via.placeholder.com/300x180?text=Dragonfly" alt="Dragonfly">
+      <figcaption><strong>Dragonfly</strong><br>Fast-flying insect that thrives near water bodies.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="other-invertebrates">
+  <h2><i class="fas fa-spider"></i> Other Invertebrates</h2>
+  <div class="gallery-grid">
+    <figure>
+      <img src="https://via.placeholder.com/300x180?text=Leech" alt="Leech">
+      <figcaption><strong>Leech</strong><br>Aquatic or terrestrial invertebrate that feeds on blood or decomposing matter.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="boats">
+  <h2><i class="fas fa-ship"></i> Traditional Boats</h2>
+  <div class="gallery-grid">
+    <figure>
+      <img src="https://via.placeholder.com/300x180?text=Dinghy" alt="Dinghy Boat">
+      <figcaption><strong>Dinghy</strong><br>Small traditional boat used by river fishermen.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="fishing-gears">
+  <h2><i class="fas fa-network-wired"></i> Fishing Gears</h2>
+  <div class="gallery-grid">
+    <figure>
+      <img src="https://via.placeholder.com/300x180?text=Fishing+Net" alt="Fishing Net">
+      <figcaption><strong>Fishing Net</strong><br>Essential gear for artisanal and small-scale fisheries.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="nests">
+  <h2><i class="fas fa-feather-alt"></i> Nests</h2>
+  <div class="gallery-grid">
+    <figure>
+      <img src="https://via.placeholder.com/300x180?text=Weaver+Bird+Nest" alt="Weaver Bird Nest">
+      <figcaption><strong>Weaver Bird Nest</strong><br>Intricate hanging nests woven from grass.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="eggs">
+  <h2><i class="fas fa-egg"></i> Eggs</h2>
+  <div class="gallery-grid">
+    <figure>
+      <img src="https://via.placeholder.com/300x180?text=Bird+Eggs" alt="Bird Eggs">
+      <figcaption><strong>Bird Eggs</strong><br>Colorful and speckled eggs of various local birds.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="replicas">
+  <h2><i class="fas fa-cubes"></i> Replicas & Models</h2>
+  <div class="gallery-grid">
+    <figure>
+      <img src="https://via.placeholder.com/300x180?text=Padma+Bridge+Model" alt="Padma Bridge Model">
+      <figcaption><strong>Padma Bridge Model</strong><br>Scale replica of the iconic Padma Bridge.</figcaption>
+    </figure>
+  </div>
+</section>
+
+</div>
+
+<footer>
+  &copy; 2025 Padma Bridge Museum | Designed with ❤️ for biodiversity and culture
+</footer>
+<script>
+    function scrollToCategory() {
+      const selected = document.getElementById("categoryDropdown").value;
+      if (selected) {
+        const section = document.getElementById(selected);
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Specimen Collections | Padma Bridge Museum</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background: #f4f9fc;
+      color: #333;
+    }
+/* Navbar */
+nav {
+      background: #0B3D91;
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 1.1rem;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #FFD700;
+      text-shadow: 0 0 5px #fff;
+    }
+
+    nav2 {
+      background-color: #0B3D91;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav2 a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    header {
+      background-color: #114B8C;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #0B3D91;
+      border-bottom: 2px solid #20B486;
+      padding-bottom: 5px;
+      margin-top: 50px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    th, td {
+      padding: 12px 15px;
+      border-bottom: 1px solid #eee;
+      text-align: left;
+    }
+
+    th {
+      background-color: #20B486;
+      color: white;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+  </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="active"><i class="fas fa-home"></i> Home</a>
+        <a href="about.html"><i class="fas fa-info-circle"></i> About the Museum</a>
+        <a href="collections.html"><i class="fas fa-archive"></i> Collections</a>
+        <a href="gallery.html"><i class="fas fa-images"></i> Gallery</a>
+        <a href="contact.html"><i class="fas fa-images"></i> Contact Us</a>
+      </nav>
+  <header>
+    <h1>Specimen Collections</h1>
+    <p>Explore the rich biodiversity and cultural heritage of the Padma region</p>
+  </header>
+
+  <nav2>
+    <a href="#mammals">Mammals</a>
+    <a href="#birds">Birds</a>
+    <a href="#reptiles">Reptiles</a>
+    <a href="#amphibians">Amphibians</a>
+    <a href="#fishes">Fishes</a>
+    <a href="#mollusks">Mollusks</a>
+    <a href="#arthropods">Arthropods</a>
+    <a href="#other-invertebrates">Other Invertebrates</a>
+    <a href="#boats">Boats</a>
+    <a href="#fishing-gears">Fishing Gears</a>
+    <a href="#nests">Nests</a>
+    <a href="#eggs">Eggs</a>
+    <a href="#replicas">Replicas</a>
+  </nav>
+
+  <div class="container">
+
+    <!-- Repeat this structure for each category -->
+
+    <section id="mammals">
+      <h2>Mammals</h2>
+      <table>
+        <tr>
+          <th>Sub-group</th>
+          <th>Number of Species</th>
+          <th>Number of Specimens</th>
+          <th>Representative Animals</th>
+        </tr>
+        <tr>
+          <td>Terrestrial Mammals</td>
+          <td>20</td>
+          <td>50</td>
+          <td>Jackal, Jungle Cat</td>
+        </tr>
+        <tr>
+          <td>Marine Mammals</td>
+          <td>3</td>
+          <td>3</td>
+          <td>Ganges River Dolphin</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="birds">
+      <h2>Birds</h2>
+      <table>
+        <tr>
+          <th>Sub-group</th>
+          <th>Number of Species</th>
+          <th>Number of Specimens</th>
+          <th>Representative Animals</th>
+        </tr>
+        <tr>
+          <td>Waterfowl</td>
+          <td>40</td>
+          <td>70</td>
+          <td>Heron, Egret</td>
+        </tr>
+        <tr>
+          <td>Raptors</td>
+          <td>10</td>
+          <td>15</td>
+          <td>Fish Eagle</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="reptiles">
+      <h2>Reptiles</h2>
+      <table>
+        <tr>
+          <th>Sub-group</th>
+          <th>Number of Species</th>
+          <th>Number of Specimens</th>
+          <th>Representative Animals</th>
+        </tr>
+        <tr>
+          <td>Lizards</td>
+          <td>8</td>
+          <td>12</td>
+          <td>Monitor Lizard</td>
+        </tr>
+        <tr>
+          <td>Snakes</td>
+          <td>15</td>
+          <td>20</td>
+          <td>Common Krait, Cobra</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="amphibians">
+      <h2>Amphibians</h2>
+      <table>
+        <tr>
+          <th>Sub-group</th>
+          <th>Number of Species</th>
+          <th>Number of Specimens</th>
+          <th>Representative Animals</th>
+        </tr>
+        <tr>
+          <td>Frogs</td>
+          <td>6</td>
+          <td>10</td>
+          <td>Tree Frog, Bullfrog</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="fishes">
+      <h2>Fishes</h2>
+      <table>
+        <tr>
+          <th>Sub-group</th>
+          <th>Number of Species</th>
+          <th>Number of Specimens</th>
+          <th>Representative Animals</th>
+        </tr>
+        <tr>
+          <td>Freshwater Fishes</td>
+          <td>100</td>
+          <td>500</td>
+          <td>Hilsa, Catfish</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="mollusks">
+      <h2>Mollusks</h2>
+      <table>
+        <tr>
+          <th>Sub-group</th>
+          <th>Number of Species</th>
+          <th>Number of Specimens</th>
+          <th>Representative Animals</th>
+        </tr>
+        <tr>
+          <td>Snails</td>
+          <td>10</td>
+          <td>25</td>
+          <td>Pond Snail</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="arthropods">
+      <h2>Arthropods</h2>
+      <table>
+        <tr>
+          <th>Sub-group</th>
+          <th>Number of Species</th>
+          <th>Number of Specimens</th>
+          <th>Representative Animals</th>
+        </tr>
+        <tr>
+          <td>Insects</td>
+          <td>60</td>
+          <td>120</td>
+          <td>Dragonfly, Butterfly</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="other-invertebrates">
+      <h2>Other Invertebrates</h2>
+      <table>
+        <tr>
+          <th>Sub-group</th>
+          <th>Number of Species</th>
+          <th>Number of Specimens</th>
+          <th>Representative Animals</th>
+        </tr>
+        <tr>
+          <td>Worms</td>
+          <td>5</td>
+          <td>10</td>
+          <td>Earthworm</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="boats">
+      <h2>Boats</h2>
+      <table>
+        <tr>
+          <th>Sub-group</th>
+          <th>Number of Species</th>
+          <th>Number of Specimens</th>
+          <th>Representative Animals</th>
+        </tr>
+        <tr>
+          <td>Traditional Boats</td>
+          <td>4</td>
+          <td>6</td>
+          <td>Dingi, Nouka</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="fishing-gears">
+      <h2>Fishing Gears</h2>
+      <table>
+        <tr>
+          <th>Sub-group</th>
+          <th>Number of Species</th>
+          <th>Number of Specimens</th>
+          <th>Representative Animals</th>
+        </tr>
+        <tr>
+          <td>Nets</td>
+          <td>8</td>
+          <td>10</td>
+          <td>Cast Net, Drag Net</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="nests">
+      <h2>Nests</h2>
+      <table>
+        <tr>
+          <th>Sub-group</th>
+          <th>Number of Species</th>
+          <th>Number of Specimens</th>
+          <th>Representative Animals</th>
+        </tr>
+        <tr>
+          <td>Bird Nests</td>
+          <td>6</td>
+          <td>6</td>
+          <td>Tailorbird, Baya Weaver</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="eggs">
+      <h2>Eggs</h2>
+      <table>
+        <tr>
+          <th>Sub-group</th>
+          <th>Number of Species</th>
+          <th>Number of Specimens</th>
+          <th>Representative Animals</th>
+        </tr>
+        <tr>
+          <td>Bird Eggs</td>
+          <td>12</td>
+          <td>24</td>
+          <td>Duck, Pigeon</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="replicas">
+      <h2>Replicas</h2>
+      <table>
+        <tr>
+          <th>Sub-group</th>
+          <th>Number of Species</th>
+          <th>Number of Specimens</th>
+          <th>Representative Animals</th>
+        </tr>
+        <tr>
+          <td>Bridge Models</td>
+          <td>1</td>
+          <td>2</td>
+          <td>Padma Bridge Replica</td>
+        </tr>
+      </table>
+    </section>
+
+  </div>
+
+</body>
+</html>
